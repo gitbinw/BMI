@@ -1,0 +1,74 @@
+@import './common.scss';
+
+body { margin: 20px auto; }
+.bmi-app {
+    .radio input[type=radio] { opacity: 0; }
+    .radio label {
+        padding: 6px 40px;
+        margin-left: 0;
+    }
+    .radio label:first-child {
+        @include border-radius-right(0);
+    }
+    .radio label:last-child {
+        @include border-radius-left(0);
+    }
+
+    .bmi-calform a.btn.btn-primary { padding: 6px 40px; cursor: pointer; }
+
+    section {
+        margin-top: 10px;
+    }
+    section.bmi-result {
+        .bmi-result-main {
+            border: none;
+            box-sizing: border-box;
+            padding: 20px;
+            min-height: 236px;
+            font-size: 18px;
+            @include border-radius(4px);
+        }
+        .bmi-result-main::after {
+            content: '\25C0';
+            position: absolute;
+            color: $color_success;
+            left: 1px;
+            top: 50%;
+        }
+    }
+
+    .bmi-display {
+        text-transform: uppercase;
+        text-align: center;
+
+        p:first-child {
+            font-size: 18px;
+        }
+        p:last-child {
+            font-size: 14px;
+            span {
+                font-size: 30px;
+                text-decoration: underline;
+                display: block;
+            }
+        }
+    }
+
+    .bmi-info {  
+        text-align: center;
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 768px) {
+    .bmi-app {
+        section.bmi-result {
+            .bmi-result-main::after {
+                content: '\25B2';
+                top: -18px;
+                left: 50%;
+            }
+        }
+    }
+}

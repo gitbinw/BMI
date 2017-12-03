@@ -1,0 +1,78 @@
+body {
+  margin: 20px auto; }
+
+.bmi-app .radio input[type=radio] {
+  opacity: 0; }
+
+.bmi-app .radio label {
+  padding: 6px 40px;
+  margin-left: 0; }
+
+.bmi-app .radio label:first-child {
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  -ms-border-top-right-radius: 0;
+  -ms-border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.bmi-app .radio label:last-child {
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  -ms-border-top-left-radius: 0;
+  -ms-border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.bmi-app .bmi-calform a.btn.btn-primary {
+  padding: 6px 40px;
+  cursor: pointer; }
+
+.bmi-app section {
+  margin-top: 10px; }
+
+.bmi-app section.bmi-result .bmi-result-main {
+  border: none;
+  box-sizing: border-box;
+  padding: 20px;
+  min-height: 236px;
+  font-size: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.bmi-app section.bmi-result .bmi-result-main::after {
+  content: '\25C0';
+  position: absolute;
+  color: #dff0d8;
+  left: 1px;
+  top: 50%; }
+
+.bmi-app .bmi-display {
+  text-transform: uppercase;
+  text-align: center; }
+  .bmi-app .bmi-display p:first-child {
+    font-size: 18px; }
+  .bmi-app .bmi-display p:last-child {
+    font-size: 14px; }
+    .bmi-app .bmi-display p:last-child span {
+      font-size: 30px;
+      text-decoration: underline;
+      display: block; }
+
+.bmi-app .bmi-info {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: bold; }
+
+@media (max-width: 768px) {
+  .bmi-app section.bmi-result .bmi-result-main::after {
+    content: '\25B2';
+    top: -18px;
+    left: 50%; } }
